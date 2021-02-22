@@ -20,10 +20,10 @@ DomElement.prototype.createElem = function(){
 		elem.setAttribute('id',this.selector.slice(1));
 	}
 	document.querySelector('body').insertAdjacentElement('afterbegin', elem);
-	elem.style.cssText = `height: ${this.height + 'px'}; 
-			width: ${this.width + 'px'}; 
+	elem.style.cssText = `height: ${this.height}px; 
+			width: ${this.width}px; 
 			background-color:${this.bg}; 
-			font-size:${this.fontSize + 'px'}`  
+			font-size:${this.fontSize}px;`  
 };
 
 	
